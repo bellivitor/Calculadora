@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caçculadora</title>
+    <title>Calculadora</title>
 </head>
 <body>
     <h2>Calculadora</h2>
+ 
     <label>Valor 1:</label>
-    <input type="number" id="val1" class="input_vall" required>
+    <input type="number" id="val1" required>
     <label>Valor 2:</label>
-    <input type="number" id="val2" class="input_vall" required>
+    <input type="number" id="val2" required>
+    <br><br>
     <button onclick="somar()">Soma</button>
     <button onclick="subtrair()">Subtração</button>
-    <button onclick="dividir()">Divisão</button>
     <button onclick="multiplicar()">Multiplicação</button>
+    <button onclick="dividir()">Divisão</button>
+ 
+    <br><br>
+ 
+    <label>Lista de números (separados por vírgula):</label>
+    <input type="text" id="valoresLista" placeholder="ex: 1, 2, 3, 4">
+    <br><br>
+    <button onclick="media()">Média</button>
+    <button onclick="mediana()">Mediana</button>
+    <button onclick="moda()">Moda</button>
+ 
+    <br><br>
     <div id="result"></div>
-
     <script src="script.js"></script>
-    
 </body>
 </html>
+ 
